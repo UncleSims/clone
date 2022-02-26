@@ -1,13 +1,529 @@
-body {
+@font-face {
+font-family: "Gilroy-Bold";
+ src: url("./fonts/Gilroy-Bold.ttf" ) format ("truetype") local("Gilroy-Bold");
+}
+@import url(//db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold);
+@font-face {font-family: "Gilroy SemiBold"; src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot"); src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff") format("woff"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.svg#Gilroy SemiBold") format("svg"); }
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Gilroy-Bold";
+  color: #24272A;
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: 7%;
+border: 1px solid #EEEEEE;
+}
+ .btn {
+position: absolute;
+width: 6.5%;
+height: 5%;
+top: 1%;
+right: 4%;
+Padding: 8px, 16px, 8px, 16px;
+border: 1 solid #000000;
+box-sizing: border-box;
+border-radius: 6px;
+border-width: thin;
+font-size: 14px;
+font-weight: bold;
+background: #FFFDFD;
+}
+.icon {
+  position: absolute;
+  left: 2%;
+  height: 5%;
+  width: 4%;
+}
+.vtrlayer {
+  position: absolute;
+  left: 1.74%;
+  right: 96.15%;
+  top: 23.33%;
+  bottom: 25.91%;
+  border-color: #020202;
+  border-width: thick;
+  box-shadow:  #020202;
+  }  
+.vtr {
+position: absolute;
+top: 25.37%;
+bottom: 44.01%;
+border-radius: 0px;
+}
+.vtr1 {
+  position: absolute;
+left: 0.5%;
+right: 99%;
+top: 70%;
+bottom: 27.95%;
+color: #F2D771;
+}
+.vtr2 {
+position: absolute;
+left: 2.4%;
+right: 94%;
+top: 25.7%;
+z-index: -1; 
+}
+.vtr3 {position: absolute;
+left: 2.45%;
+right: 96.26%;
+top: 58%;
+bottom: 27.94%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+  width: 100%;
+height: 11%;
+position: absolute;
+right: 0%;
+bottom: 0%;
+}
+.design {
+  width: 3.5%;
+  color: #EBEBEC;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  }
+  .container1 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 100%;
+  }
+.audiobar {
+  height :25%;
+ width: 55%;
+position: absolute;
+left: 20%;
+bottom: 26.66%;
+}
+.timer.primary{
+height: 20%;
+  font-family: "Gilroy SemiBold";
+  font-size: small;
+    position: absolute;
+  left: 16%;
+  right: 67.36%;
+  top: 51.8%;
+  }
+  .timer.tertiary {
+    height: 20%;
+  font-family: "Gilroy SemiBold";
+  font-size: small;
+  position: absolute;
+  left: 75.7%;
+  top: 51.8%;
+  bottom: 16px;
+  }
+  .rewind {
+    height: 22%;
+    width: 2%;
+    position: absolute;
+    left: 40.8%;
+  top: 3.7%;
+  transform: rotateY(180deg);
+  padding-left: 10px;
+  }
+  .foward {
+    height: 22%;
+    width: 2%;
+    position: absolute;
+    left: 50.6%;
+  top: 3.0%;
+  
+  }
+  .player {
+    width: 5%;
+    height: 60%;
+    position: absolute;
+    bottom: 55%;
+  left: 44%;
+  }
+  .circle {
+    width: 6%;
+    height: 60%;
+    position: absolute;
+    left: 43.5%;
+    bottom: 54.5%;
+  }
+  
+/*.volumebar {
+  position: absolute;
+left: 93.33%;
+right: 1.11%;
+top: 52%;
+bottom: 47.31%;
+}
+.audioslider {
+  position: absolute;
+left: 93.33%;
+right: 3.61%;
+top: 52%;
+bottom: 47.31%;
+z-index: 1;
+}
+.volup {
+  position: absolute;
+left: 91%;
+right: 3%;
+top: 47%;
+bottom: 30%;
+}
+.vol {
+  position: absolute;
+left: 91.63%;
+top: 50%;
+bottom: 30%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+.content {
+  width: 75%;
+  position: absolute;
+left: 28.6%;
+right: -0.07%;
+top: 7.65%;
+bottom: 11.86%;
+background: #24272A;
+backdrop-filter: blur(4px);
 }
+.content-text1 {
+font-family: "Gilroy SemiBold";
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFDFD;
+position: absolute;
+left: 117.62px;
+top: 43px;
+z-index: 1;
+}
+.content-text2 {
+  font-family: "Gilroy SemiBold";
+font-size: 13px;
+line-height: 3px;
+letter-spacing: 0px;
+text-align: left;
+color: #929496;
+position: absolute;
+left: 115.62px;
+top: 65px;
+padding-top: 0;
+}
+.audio-author {
+  position:absolute;
+  left: 67.62px;
+  top: 38px;
+}
+.content-text3 {
+  font-family: "Gilroy-Bold";
+font-size: 38px;
+line-height: 44px;
+letter-spacing: -0.4000000059604645px;
+text-align: left;
+position: absolute;
+left: 68px;
+right: 6.81%;
+top: 101px;
+bottom: 67.47%;
+color: #FFFDFD;
+}
+.field-text{
+  width: 35%;
+} 
+.text{
+  font-family: "Gilroy-Bold";
+font-size: 40px;
+line-height: 50px;
+letter-spacing: -0.4000000059604645px;
+text-align: left;
+position: absolute;
+left: 1.81%;
+right: 87.92%;
+top: 12.88%;
+bottom: 80.74%;
+}
+p.field-text2 {
+font-family: "Gilroy SemiBold";
+  font-weight: 100;
+  font-size: 16px;
+line-height: 20px;
+text-align: left;
+position: absolute;
+width: 255px;
+height: 20px;
+left: 27px;
+top: 201px;
+color: #606264;
+
+}
+.google-button {
+  height: 7%;
+width: 25%;
+border-radius: 8px;
+box-sizing: border-box;
+  border: 1px solid #24272A;
+  position: absolute;
+  top: 243px;
+  left: 25px;
+  background: #FFFFFF;
+}
+.google-logo {
+  height: 20px;
+width: 20px;
+left: 16px;
+top: 14px;
+border-radius: 0px;
+position: absolute;
+width: 20px;
+height: 20px;
+left: 16px;
+top: 14px;
+}
+google-text {
+  height: 20px;
+width: 153px;
+left: 105.09423828125px;
+top: 14px;
+border-radius: nullpx;
+font-size: 15px;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: center;
+position: absolute;
+left: 28.95%;
+right: 28.9%;
+top: 29.17%;
+bottom: 29.17%;
+}
+.twitter-button {
+height: 48px;
+width: 25%;
+border-radius: 8px;
+background: #FFFFFF;
+border: 1px solid #24272A;
+position: absolute;
+top: 301px;
+left: 25px;
+}
+.twitter-logo {
+height: 16.822227478027344px;
+width: 21.249126434326172px;
+left: 0.72998046875px;
+top: 0.21044921875px;
+border-radius: 0px;
+position: absolute;
+left: 3.21%;
+right: 3.22%;
+top: 15.21px;
+bottom: 3.57%;
+}
+twitter-text {
+height: 20px;
+width: 149px;
+left: 107.09423828125px;
+top: 14px;
+border-radius: nullpx;
+}
+.button.primary {
+width: 66px;
+height: 26px;
+position: absolute;
+left: 69.14px;
+top: 221px;
+background: rgba(246, 246, 248, 0.24);
+border: 1;
+border-radius: 4px;
+}
+.content-button-text {
+font-family: "Gilroy-Bold";
+font-size: 13px;
+line-height: 20px;
+color: #FFFDFD;
+}
+.button.secondary {
+position: absolute;
+width: 75px;
+height: 26px;
+left: 140.49px;
+top: 221px;
+background: #F6F6F83D;
+border: 1;
+border-radius: 4px;
+}
+.content-button-text2 {
+font-family: "Gilroy-Bold";
+font-size: 13px;
+line-height: 20px;
+color: #FFFDFD;
+}
+.button.tertiary {
+height: 44px;
+width: 113px;
+/*padding: 12px, 30px, 12px, 30px;*/
+/*background: #24272A;
+border: 1px solid #000000;
+box-sizing: border-box;
+position: absolute;
+top: 650px;
+left: 25px;
+border: 1;
+border-radius: 8px;
+}
+.info-button-text {
+font-family: "Gilroy-Bold";
+font-size: 15px;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: center;
+color: #FFFDFD;  
+}
+.form-text1 {
+height: 56px;
+width: 363px;
+border-radius: 10px;
+background: #FFFFFF;
+border: 1px solid #E9E9EB;
+box-sizing: border-box;
+position: absolute;
+top: 401px;
+left: 21px;
+font-family: "Gilroy SemiBold";
+}
+.form-text2 {
+height: 56px;
+width: 179.6884307861328px;
+border-radius: 10px;
+position: absolute;
+top: 467px;
+left: 20px;
+border: 1px solid #ECECEE;
+box-sizing: border-box;
+font-family: "Gilroy SemiBold";
+}
+.form-text3 {
+  font-family: "Gilroy SemiBold";
+  height: 56px;
+width: 179.6884307861328px;
+border-radius: 10px;
+background: #FFFFFF;
+border: 1px solid #ECECEE;
+box-sizing: border-box;
+position: absolute;
+top: 467px;
+left: 204px;
+}
+.form-text4 {
+  height: 56px;
+  width: 363px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #ECECEE;
+  box-sizing: border-box;
+
+  font-family: "Gilroy SemiBold";
+  position: absolute;
+  top: 533px;
+  left: 20px;
+  }*/
+  
+
+
+
+/* Media Quaries */
+/*@media screen and (max-width: 1440px) and (max-height: 777px) {
+  .button.tertiary {
+    top: 630px;
+  }
+}
+@media (max-height: 735px) {
+  .design {
+    width: 45px;
+    height: 45px;
+  }
+  p.field-text2 {
+    top:186px;
+  }
+  .google-button {
+    top: 225px;
+  }
+  .twitter-button {
+    top: 282px;
+  }
+  .form-text1 {
+    top: 372px;
+  }
+  .form-text2 {
+    top: 436px;
+  }
+  .form-text3 {
+    top: 436px;
+  }
+  .form-text4 {
+    top:500px;
+  }
+  .button.tertiary {
+    top: 600px;
+  }
+}
+/*@media (max-width: 1433px) {
+  .timer.primary {
+    left:31%;
+  }
+  .timer.tertiary {
+    left: 67.5%;}
+}
+@media (max-width: 1420px) {
+  .content{
+    width: 1028px;
+  }
+  .timer.tertiary {
+    left: 68%;
+  }
+}
+@media (max-width: 1399px) {
+.google-button{
+  width: 350px;
+}
+.twitter-button {
+  width: 350px;
+}
+.form-text1 {
+  width: 350px;
+}
+.form-text2 {
+  width: 173px;
+}
+.form-text3 {
+  width: 173px;
+  left: 198px
+}
+.form-text4 {
+  width: 350px;;
+}
+}
+@media (max-width: 1395px) {
+  .timer.tertiary {
+    left: 68.2%;
+  }
+}
+@media (max-width: 1387px) {
+  .timer.tertiary {
+    left: 68.8%;
+  }
+}*/
